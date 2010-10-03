@@ -1,18 +1,19 @@
-g = [ 1, 2, 3, 4, 5, 6, 7, 8, 9 ]
-@left = 0
-@right = g.length
-def bsearch2( num, arr )
-  @mid = (@right + @left)/2
-	if num == arr[@mid] then
-	  return @mid
-	elsif num < arr[@mid] then
-	  @right = @mid
-		bsearch2( num, arr )
-	elsif num > arr[@mid] then
-	  @left = @mid
-	  bsearch2( num, arr )
+arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+def bsearch(num, arr, left, right)
+  mid = (right + left)/2
+	if num == arr[mid] 
+	  return mid
+	elsif num < arr[mid] 
+	  right = mid
+		bsearch(num, arr, left, right)
+	elsif num > arr[mid] 
+	  left = mid
+	  bsearch(num, arr, left, right)
 	end
 end
-@i=6
-puts bsearch2(@i , g )
+
+for i in arr
+	puts bsearch(i, arr, 0, arr.length)
+end
 
