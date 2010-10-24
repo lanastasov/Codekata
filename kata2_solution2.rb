@@ -16,4 +16,5 @@ for i in arr
 	puts binsearch(arr, i, 0, arr.length)
 end
 
+
   
