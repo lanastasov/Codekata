@@ -27,7 +27,7 @@ def bsearch( num, mas )
     
   end
 end
-#puts bsearch( 5, g )
+puts bsearch( 5, g )
 
 #Doesn't work! Why?
 #1.upto(11) do |x|
