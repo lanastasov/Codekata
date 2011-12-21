@@ -1,4 +1,4 @@
-!def rev(str)
+def rev(str)
   loop = str.length
   word = ""
   while loop > 0
