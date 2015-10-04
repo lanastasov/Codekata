@@ -12,6 +12,9 @@ Dir.glob("*") { |x|
 	dirs << x if x != "\n" && File.directory?("#{x}") 
 }
 
+# if the video doesn't play in the browser use this:
+# ffmpeg -i input.mp4 -vcodec libx264 output.mp4
+
 if dirs.length > 0 then
 	for dir in dirs do 
 		Dir.chdir("#{dir}")
