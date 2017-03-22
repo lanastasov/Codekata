@@ -17,12 +17,12 @@ public class day3_IntroConditionalStatements {
 		     ans = "Weird";
 		  }
 		  else{
-			    if (n >= 2 && n <= 5) 
-	              ans = "Not Weird";
-	        if (n >= 6 && n <= 20)
-	              ans = "Weird";
-	        if (n > 20)
-	              ans = "Not Weird";
+			if (n >= 2 && n <= 5) 
+	              		ans = "Not Weird";
+			if (n >= 6 && n <= 20)
+	              		ans = "Weird";
+	        	if (n > 20)
+	              		ans = "Not Weird";
 		  }
 		  System.out.println(ans);
 	}
