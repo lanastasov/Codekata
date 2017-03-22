@@ -16,6 +16,58 @@ func main() {
 	fmt.Println(ip)
 }
 
+// Solution 2
+/*
+package main
+import "fmt"
+
+func min(n int) string {
+	if n == 2 {
+		return "min(int, int)"
+	}
+	return "min(int, " + min(n-1) + ")"
+}
+
+func main() {
+	var n int
+	fmt.Scan(&n)
+
+	fmt.Println(min(n))
+}
+*/
+
+// Solution 3
+/*
+package main
+import "fmt"
+
+func construct(n int) string {
+    var res = ""
+    
+    for i := 0; i < n - 1; i++ {
+        res += "min(int, "
+    }
+    res += "int"
+    for i := 0; i < n - 1; i++ {
+        res += ")"
+    }
+    return res
+}
+
+func main() {
+    var n int
+    fmt.Scanf("%d", &n)
+    
+    if (n>2) {
+        fmt.Println(construct(n))
+    } else {
+        fmt.Println("min(int, int)")
+    }
+    
+}
+*/
+
+
 // JAVA Solution
 /* 
 public class Solution {
